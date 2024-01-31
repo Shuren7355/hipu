@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>7thclass</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/classes.css">
+</head>
+<body>
+  <header>
+    <h1>7<sup>th</sup> Class</h1>
+    <div class="search-container">
+      <input type="text" id="searchBar" placeholder="Search subjects...">
+      <button class="search-button">
+  <i class="fas fa-magnifying-glass"></i>
+</button>
+
+    </div>
+  </header>
+<div class="subject-list">
+    <a href="https://drive.google.com/drive/folders/133mvCGhY79Sa9D8QI2znIqe96j5YxJ4Y" class="subject" onclick="showSubjectDetails('Mathematics')">Mathematics</a>
+    <a href="https://drive.google.com/drive/folders/135bVrnX7V-RuIcAt0U4HDEn5Ii6eCY39" class="subject" onclick="showSubjectDetails('Science')">Science</a>
+    <a href="https://drive.google.com/drive/folders/135d4EPoNv8G5IgvlzCOe-ZbXIfaIMStT" class="subject" onclick="showSubjectDetails('English (General)')">English (General)</a>
+    <a href="https://drive.google.com/drive/folders/13Arexp2SaCZllEPyIdxGH7IXVECUWppS" class="subject" onclick="showSubjectDetails('Geography')">Geography</a>
+    <a href="https://drive.google.com/drive/folders/138aOh625_WgMdccswojQCJ61vx5VN8jl" class="subject" onclick="showSubjectDetails('History')">History</a>
+    <a href="https://drive.google.com/drive/folders/13BYv7cYPDcO6DFujHYiHzpTn04C1rdl-" class="subject" onclick="showSubjectDetails('Political Science')">Political Science</a>
+    <a href="https://drive.google.com/drive/folders/13CRz4hVLTGOL9AyWIv05xGoKK0F5iZdL" class="subject" onclick="showSubjectDetails('Economics')">Economics</a>
+    <a href="https://drive.google.com/drive/folders/13FUDuQRHvwioEcK60NaOWx2rzSljqQHZ" class="subject" onclick="showSubjectDetails('Computer Science')">Computer Science</a>
+    <a href="https://drive.google.com/drive/folders/13ViMU0RikrQ3sJ4k0C-LErfbS2bzUvet" class="subject" onclick="showSubjectDetails('Punjabi(General)')">Punjabi(General)</a>
+    <a href="https://drive.google.com/drive/folders/13VqPfHvlQON6F4Afeb_74reS_S8fRleB" class="subject" onclick="showSubjectDetails('Punjabi (Elective)')">Punjabi (Elective)</a>
+    <a href="https://drive.google.com/drive/folders/1AVwjIUBHLhAxjAhSILmfI1RD9AGHO2JO" class="subject" onclick="showSubjectDetails('Environmental Studies')">Environmental Studies</a>
+    <a href="https://drive.google.com/drive/folders/14QYvqZwu8sCYWDPvhkxuXKk8IeqF6l6Z" class="subject" onclick="showSubjectDetails('Hindi')">Hindi</a>
+      <a href="https://drive.google.com/drive/folders/1-YwDFFpWXsSsWIPej66rqczllKNwYOy3" class="subject" onclick="showSubjectDetails('Welcome Life')">Welcome Life</a>
+    <!-- Add more subject links here -->
+  </div>
+  
+  <div class="subject-details-container">
+    <h2 id="subjectHeading"></h2>
+    <p id="subjectDescription"></p>
+  </div>
+  <div class="subject-about-container">
+    <h2>About the Subjects</h2>
+    <ul>
+            <li>  <a href="WolFramAlpha.html" class="main-subject" onclick="showSubjectDetails('Mathematics')">Mathematics:</a> Mathematics is the study of numbers, shapes, and patterns. It includes topics such as arithmetic, geometry, algebra, and statistics.</li>
+      <li><a href="SolarWind.html" class="main-subject" onclick="showSubjectDetails('Science')">Science:</a>Science is the study of the natural world. It covers topics such as biology, chemistry, physics, and environmental science.</li>
+      <li><a href="Kiddle.html" class="main-subject">English (General):</a> English involves the study of language, literature, reading, writing, and communication skills.</li>
+      <li><a href="GoogleMap.html" class="main-subject">Geography:</a> Geography is the study of the Earth's physical features, climate patterns, natural resources, and human interactions with the environment.</li>
+      <li><span class="main-subject" onclick="showSubjectDetails('History')">History:</span> History is the study of past events, civilizations, societies, and human achievements.</li>
+      <li><span class="main-subject" onclick="showSubjectDetails('Political Science')">Political Science:</span> Political Science is the study of government systems, political behavior, public policies, and the theory and practice of politics.</li>
+      <li><span class="main-subject"   onclick="showSubjectDetails('Economics')">Economics:</span> Economics is the study of how individuals, businesses, and societies allocate scarce resources to satisfy unlimited wants and needs.</li>
+      <li><a href="game.html" class="main-subject" >Computer Science:</a> Computer Science introduces students to the basics of programming, computational thinking, and problem-solving using computers.</li>
+      <li><span class="main-subject" onclick="showSubjectDetails('Punjabi (General)')">Punjabi (General):</span> Punjabi is an Indo-Aryan language primarily spoken in the Punjab region of India and Pakistan.</li>
+      <li><span class="main-subject" onclick="showSubjectDetails('Punjabi (Elective)')">Punjabi (Elective):</span> This is an elective subject in Punjabi that provides further specialization in the language and its literature.</li>
+      <li><span class="main-subject"  onclick="showSubjectDetails('Environmental Studies')">Environmental Studies:</span> Environmental Studies is the study of the environment and its interactions with human society.</li>
+      <li><span class="main-subject" onclick="showSubjectDetails('Hindi')">Hindi:</span> Hindi is the national language of India and one of the most widely spoken languages in the world.</li>
+      <li><span class="main-subject" onclick="showSubjectDetails('Welcome Life:')">Welcome Life:</span> An orientation course to prepare you for the next phase of life.</li>
+    </ul>
+  </div>
+  <div style="position: fixed; bottom: 10px; right: 10px;">
+    <a href="ByMeACoffee.html">
+      <img src="https://svgsilh.com/svg/654328.svg" alt="Coffee Cup Icon" width="40" height="40">
+       </a>
+  </div>
+  <script src="styles/script/scripts.js">
+  </script>
+</body>
+</html>

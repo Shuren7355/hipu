@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>11thclass</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/classes.css">
+</head>
+<body>
+  <header>
+    <h1>+1 Arts Students</h1>
+    <div class="search-container">
+      <input type="text" id="searchBar" placeholder="Search subjects...">
+      <button class="search-button">
+  <i class="fas fa-magnifying-glass"></i>
+</button>
+
+    </div>
+  </header>
+  <div class="subject-list">
+    <a href="https://drive.google.com/drive/folders/16SJPdm-pUDsdwLNcgYZo8JFcYEonymq0" class="subject" onclick="showSubjectDetails('General English')">General English</a>
+    <a href="https://drive.google.com/drive/folders/16mZmliQNk5DeBu4M4__XbbCymFfMVEWs" class="subject" onclick="showSubjectDetails('Political Science')">Political Science</a>
+    <a href="https://drive.google.com/drive/folders/16xAmgGjmjtqORQvHdYu5Aem2Kr26Yfg3" class="subject" onclick="showSubjectDetails('Economics')">Economics</a>
+    <a href="https://drive.google.com/drive/folders/16yJ435RFnCw97W23JOZJSWZd72K_KOkB" class="subject" onclick="showSubjectDetails('Computer Science')">Computer Science</a>
+    <a href="https://drive.google.com/drive/folders/172JlgcC2i2UrPnjVXvxGnP1zo_wVYzjv" class="subject" onclick="showSubjectDetails('General Punjabi')">General Punjabi</a>
+     <a href="https://drive.google.com/drive/folders/10G5gSuMEq2YfzU8ucTARF6x3PQPdnHhu" class="subject" onclick="showSubjectDetails('Welcome Life')">Welcome Life</a>
+  </div>
+  <div class="subject-details-container">
+    <h2 id="subjectHeading"></h2>
+    <p id="subjectDescription"></p>
+  </div>
+  <div class="subject-about-container">
+    <h2>About the Subjects</h2>
+    <ul>
+      <li><a href="Kiddle.html" class="main-subject" onclick="showSubjectDetails('General English')">General English:</a> Improve your language skills and communication abilities in English.</li>
+      <li><span class="main-subject" onclick="showSubjectDetails('Political Science')">Political Science:</span> Study the theory and practice of politics and government.</li>
+      <li><span class="main-subject" onclick="showSubjectDetails('Economics')">Economics:</span> Explore the principles of economics and how economies work.</li>
+      <li><a href="Few.html" class="main-subject" onclick="showSubjectDetails('Computer Science')">Computer Science:</a> Get introduced to computer science concepts and programming languages.</li>
+      <li><span class="main-subject" onclick="showSubjectDetails('General Punjabi')">General Punjabi:</span> Learn the Punjabi language and its cultural significance.</li>
+      <li><span class="main-subject" onclick="showSubjectDetails('Welcome Life:')">Welcome Life:</span> An orientation course to prepare you for the next phase of life.</li>
+    </ul>
+  </div>
+    <div style="position: fixed; bottom: 10px; right: 10px;">
+    <a href="ByMeACoffee.html">
+      <img src="https://svgsilh.com/svg/654328.svg" alt="Coffee Cup Icon" width="40" height="40">
+    </a>
+  </div>
+      <script src="styles/script/scripts.js">
+  </script>
+</body>
+</html>

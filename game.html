@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>Tic Tac Toe</title>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+ href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>
+  <link rel="stylesheet" href="styles/app/play/play.css">
+</head>
+<body>
+  <h1 class="header" style="backdrop-filter: blur(2px);"><strong>Tic Tac Toe</strong></h1>
+  <div class="board-container">
+    <div class="board" onclick="handleCellClick(event)">
+      <div class="cell" data-cell="0"></div>
+      <div class="cell" data-cell="1"></div>
+      <div class="cell" data-cell="2"></div>
+      <div class="cell" data-cell="3"></div>
+      <div class="cell" data-cell="4"></div>
+      <div class="cell" data-cell="5"></div>
+      <div class="cell" data-cell="6"></div>
+      <div class="cell" data-cell="7"></div>
+      <div class="cell" data-cell="8"></div>
+    </div>
+    <!-- FAB to reset the game -->
+ <div class="fab" onclick="resetGame()">
+    <i class="material-icons">refresh</i>
+  </div>
+  </div>
+  <div style="position: fixed; bottom: 10px; right: 150px;">
+    <a href="ByMeACoffee.html">
+      <img src="https://svgsilh.com/svg/654328.svg" alt="Coffee Cup Icon" width="50" height="50">
+    </a>
+  </div>
+  <script src="styles/app/play/play.js">
+
+  </script>
+</body>
+</html>

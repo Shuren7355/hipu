@@ -1,0 +1,36 @@
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  color: #333333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #0066cc;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+li.fade-out {
+  opacity: 0;
+}
+
+p {
+  margin-top: 5px;
+}

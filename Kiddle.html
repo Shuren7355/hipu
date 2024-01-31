@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kiddle Search</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/app/kiddle/kiddle.css">
+</head>
+
+<body background="black">
+  <div class="container">
+    <!--<img class="logo" src="#" alt="Kiddle Logo">
+    <div class="encryption-locked">Encryption Locked</div>
+    <div class="kiddle-text">Welcome to Kiddle Search</div>-->
+    <div class="search-container">
+      <input type="text" id="searchInput" class="search-bar" placeholder="Say Everything....">
+      <button class="search-button" onclick="performSearch()">Search</button>
+    </div>
+  <button id="openBot">Open Dictionary Bot</button>
+    <div id="botContainer" style="display: none;">
+        <input type="text" id="wordInput" placeholder="Enter a word">
+        <button id="searchButton">Search</button>
+        <div id="results"></div>
+        <audio id="audioPlayer" controls>
+            <source src="" type="audio/mpeg">
+        </audio>
+    </div>
+    <div style="position: fixed; bottom: 10px; right: 10px;">
+        <a href="ByMeACoffee.html">
+            <img src="https://svgsilh.com/svg/654328.svg" alt="Coffee Cup Icon" width="40" height="40">
+        </a>
+    </div>
+
+  <script src="styles/app/kiddle/kiddle.js">
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>StaySecure</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/app/swiss.css">
+</head>
+
+<body>
+  <img src="https://unsplash.com/photos/SPTh4rzR6xQ/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Nnx8Y3JlYXRpdml0eXxlbnwwfHx8fDE3MDIzOTU2Mzh8MA&force=true" class="background-image">
+
+  <!-- Video for desktop view -->
+  <video class="desktop-video" autoplay muted loop>
+    <source src="https://motionbgs.com/dl/hd/1070" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <!-- Search Bar start -->
+  <div class="search-bar">
+    <!-- Dropdown start -->
+    <div class="dropdown">
+      <div id="drop-text" class="dropdown-text">
+        <span id="span">Select Search Engine</span>
+        <i id="icon" class="fa-solid fa-chevron-down"></i>
+      </div>
+      <ul id="list" class="dropdown-list">
+        <li class="dropdown-list-item" data-search="https://www.ecosia.org/search?q=$">Ecosia</li>
+        <li class="dropdown-list-item" data-search="#test.html">Coming Soon...</li> 
+      </ul>
+    </div>
+    <!-- Dropdown ends -->
+
+    <!-- Search box input start -->
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Search anything..." onchange="updateSearchEngine(this.value)">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <!-- Search box input ends -->
+  </div>
+  <!-- Search Bar ends -->
+
+  <script src="styles/app/swiss.js"></script>
+</body>
+
+</html>

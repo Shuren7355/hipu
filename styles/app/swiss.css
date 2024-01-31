@@ -1,0 +1,168 @@
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+
+    /* Define variables */
+    :root {
+      --blue: #9ab3f5;
+      --purple: #9a1663;
+      --white: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+      /* --green: #00ff00;  Placeholder for a green color */
+    }
+
+    /* Common styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style-type: none;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    /* Background */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    /* Search Bar styles */
+    .search-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-width: 700px;
+      padding: 10px;
+      border-radius: 30px;
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.5);
+      box-shadow: var(--shadow);
+    }
+
+    .dropdown {
+      /* Existing dropdown styles */
+      position: relative;
+      width: 280px;
+      border-radius: 50px;
+      background-color: var(--green);
+      border: 1px solid var(--white);
+      box-shadow: var(--shadow);
+      cursor: pointer;
+    }
+
+    .dropdown-text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1rem;
+      font-weight: 500;
+      background-color: transparent;
+      padding: 1rem 1.5rem;
+      color: var(--white);
+    }
+
+    .dropdown-list {
+      /* Existing dropdown list styles */
+      display: block;
+      position: absolute;
+      top: 4rem;
+      left: 0;
+      width: 100%;
+      border-radius: 15px;
+      max-height: 0;
+      overflow: hidden;
+      background-color: var(--white);
+      transition: max-height 0.5s;
+    }
+
+    .dropdown-list-item {
+      /* Existing dropdown list item styles */
+      font-size: 0.9rem;
+      font-weight: 500;
+      border-radius: 15px;
+      padding: 1rem 0 1rem 1.5rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease, color 0.3s ease, margin-left 0.2s ease;
+    }
+
+    .dropdown-list-item:hover {
+      margin-left: 0.5rem;
+      color: var(--purple);
+    }
+
+    #list.show {
+      max-height: 200px;
+    }
+
+    .search-box {
+      /* Existing search box styles */
+      display: flex;
+      align-items: center;
+      padding-right: 1rem;
+      width: 100%;
+      color: none;
+      backdrop-filter: blur(20px);
+      border: none;
+      border-radius: 20px;
+    }
+
+    .search-box input {
+      /* Existing input styles */
+      padding: 1rem;
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--green);
+      border: 0;
+      border-radius: 15px;
+      outline: 0;
+    }
+
+    .search-box i {
+      /* Existing icon styles */
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+
+    .search-box input::placeholder {
+      /* Existing placeholder styles */
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--green);
+    }
+
+    /* Media queries for responsiveness */
+    @media only screen and (max-width: 600px) {
+      .search-bar {
+        min-width: 90%;
+      }
+    }
+    
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .desktop-video {
+      display: none; /* Hide video on smaller screens */
+    }
+    
+    @media only screen and (min-width: 671px) {
+      .desktop-video {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }

@@ -1,0 +1,185 @@
+    body {
+    margin: 0;
+      font-family: Poppins, Arial, sans-serif;
+      background-image: url('https://unsplash.com/photos/tX-gwcBqU4Q/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8N3x8R3Jhdml0eXxlbnwwfHx8fDE3MDM2MDgzNjB8MA&force=true');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #fff;
+      line-height: 1.6;
+      padding: 20px;
+      h1 {
+      font-size: 36px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    em {
+      font-style: italic;
+    }
+    
+      /* Additional styles for the calculator */
+     .calculator-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.calculator-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.calculator-body {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-area {
+    max-height: 200px;
+    overflow-y: scroll;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.bot-message {
+    background-color: #e1f7d5;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.user-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#userInput {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#sendButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#sendButton:hover {
+    background-color: #0056b3;
+}
+
+      /* ... (existing styles) ... */
+
+.open-bot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 40px 50px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.bot-overlay {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9998;
+}
+
+.bot-overlay.active {
+    display: block;
+}
+
+/* ... (existing styles) ... */
+
+.bot-box {
+    position: relative;
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.open-bot-button {
+    background-color: brown;
+    color: #fff;
+    border: none;
+    border-radius: 500px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+
+.bot-overlay {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9998;
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+}
+
+.bot-overlay.active {
+    display: block;
+    transform: translateY(0);
+}
+
+.bot-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.bot-icon img {
+  max-width: 100%;
+  max-height: 100%;
+}

@@ -1,0 +1,56 @@
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('https://unsplash.com/photos/FO7bKvgETgQ/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OTZ8fG5hdHVyZXxlbnwwfDB8fHwxNzA2NjgyNjQyfDA&force=true') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .container {
+          max-width: 800px;
+            text-align: center;
+            backdrop-filter: blur(20px);
+      border: none;
+      padding: 20px;
+      border-radius: 20px;
+        }
+
+        input[type="text"] {
+            padding: 1rem;
+      font-size: 1rem;
+      font-weight: 300;
+      border: 0;
+      border-radius: 15px;
+      outline: 0;
+        }
+
+        button {
+            background-color: black;
+            color: wheat;
+            border: black;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            backdrop-filter: blur(20px);
+      border: none;
+      border-radius: 20px;
+        }
+
+        #results {
+          color: black;
+          padding: 0.5rem;
+          font-size: 1rem;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .translation {
+          padding: 1rem;
+          font-size: 1rem;
+            margin-top: 10px;
+        }

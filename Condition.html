@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <title>Weather</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/app/condition/cond.css">
+</head>
+<body>
+    <video class="video-background" autoplay loop muted id="weatherVideo">
+        <source src="https://assets.mixkit.co/videos/download/mixkit-sun-rays-over-forest-treetops-515.mp4"
+            type="video/mp4">
+        <!-- Default video for clear day -->
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="weather-container">
+        <h1>Weather </h1>
+        <div class="location">
+            <input type="text" id="cityInput" placeholder="Enter city" onchange="updateSearchEngine(this.value)">
+            <i class="fa-solid fa-magnifying-glass" onclick="getWeather()"></i>
+            <!--<button onclick="getWeather()">Get </button>-->
+        </div>
+        <div class="weather-info">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+            <p id="windSpeed"></p>
+            <p id="sunrise"></p>
+            <p id="sunset"></p>
+            <svg id="weatherIcon" class="weather-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path
+                    d="" /></svg>
+        </div>
+    </div>
+
+    <audio id="rainSound" src="https://assets.mixkit.co/active_storage/sfx/2415/2415.wav" loop></audio>
+    <audio id="thunderSound" src="https://assets.mixkit.co/active_storage/sfx/1297/1297.wav" loop></audio>
+    <script src="styles/app/condition/cond.js">
+
+    </script>
+</body>
+
+</html>

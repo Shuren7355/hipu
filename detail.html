@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Education Hub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles/detail.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to our Education Hub</h1>
+    </header>
+    <div class="container">
+        <h2><button class="btn" onclick="toggleVisibility('story')">The Story is Everything</button></h2>
+        <div id="story" class="hidden-content">
+            <p>Welcome to our website, a hub of study materials crafted specifically for school students. 
+            Our primary mission is to provide easy access to diverse study resources, enabling 
+            students to excel in their academic pursuits.</p>
+            
+            <!-- More content goes here -->
+        </div>
+        
+        <h2><button class="btn" onclick="toggleVisibility('goals')">Goals</button></h2>
+        <div id="goals" class="hidden-content">
+            <ul>
+                <li><button class="btn">Unleashing Creativity</button> - We strive to spark imaginative thoughts and encourage students 
+                to think beyond conventional boundaries. Through interactive learning experiences, we 
+                aim to nurture creativity and ignite a passion for exploring new ideas.</li>
+                <li><button class="btn">Knowledge without Limits</button> - We firmly believe that no knowledge should be out of reach. 
+                Our goal is to bridge the gap between students and comprehensive study materials, 
+                making every subject and topic accessible and understandable.</li>
+                <li><button class="btn">Empowering Minds</button> - We consider this website an embodiment of our vision. By 
+                fostering interactivity and engagement, we aim to empower young minds to delve deeper 
+                into the world of knowledge, nurturing a lifelong love for learning.</li>
+                <li><button class="btn">Safe and Nurturing Environment</button> - Ensuring a safe and nurturing environment for 
+                students is paramount. Our commitment to family-friendly content, privacy focus, and 
+                adherence to strict guidelines ensures that students can explore the website with 
+                confidence and without any concerns.</li>
+            </ul>
+        </div>
+
+        <h2><button class="btn" onclick="toggleVisibility('target-audience')">Target Audience and Key Objectives</button></h2>
+        <div id="target-audience" class="hidden-content">
+            <p>Our website is designed to cater to a diverse and wide-ranging audience, with a primary 
+            focus on school students. The target audience includes:</p>
+            
+            <!-- More content goes here -->
+        </div>
+
+        <h2><button class="btn" onclick="toggleVisibility('concept')">Website Concept and Theme</button></h2>
+        <div id="concept" class="hidden-content">
+            <p>Our website is more than just a platform, it's a digital lifeline designed with a singular 
+            focus - to bridge the gap in education for school students.</p>
+            
+            <!-- More content goes here -->
+        </div>
+
+        <h2><button class="btn" onclick="toggleVisibility('journey')">The Journey Of Our Website Creation</button></h2>
+        <div id="journey" class="hidden-content">
+            <p>It all began in the vibrant heartland of Punjab, India, within the walls of a government 
+            school, in the early months of 2022.</p>
+            
+            <!-- More content goes here -->
+        </div>
+
+        <h2><button class="btn" onclick="toggleVisibility('call-to-action')">Call to Action</button></h2>
+        <div id="call-to-action" class="hidden-content">
+            <p>We greatly value your voice and invite you to share your experiences with us.</p>
+            
+            <!-- More content goes here -->
+        </div>
+
+        <h2><button class="btn" onclick="toggleVisibility('mission')">Join Our Mission</button></h2>
+        <div id="mission" class="hidden-content">
+            <p>We've added a special feature to our website - <a href="ByMeACoffee.html" >a donation box</a>. Every contribution, no 
+            matter the size, brings us closer to our vision of owning our domain and server.</p>
+            
+            <!-- More content goes here -->
+        </div>
+
+        <h2><button class="btn" onclick="toggleVisibility('conclusion')">Conclusion</button></h2>
+        <div id="conclusion" class="hidden-content">
+            <p>In the grand finale of our discourse, let's kindle the spirit of exploration. Embark on a 
+            journey of discovery - try something new, unconventional, and beyond your <a href="grabd.html">comfort zone.</a></p>
+            
+            <!-- More content goes here -->
+        </div>
+    </div>
+    <div style="position: down; bottom: 100px; right: 130px;">
+    <a href="ByMeACoffee.html">
+      <img src="https://svgsilh.com/svg/654328.svg" alt="Coffee Cup Icon" width="40" height="40">
+    </a>
+  </div>
+    <script>
+        function toggleVisibility(id) {
+            var content = document.getElementById(id);
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

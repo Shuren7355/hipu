@@ -1,0 +1,175 @@
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Poppin, sans-serif;
+  font-family: var(--font-family-base);
+      background-color: #5B4636;
+      color: #030101DE;/* Dark Coffee color */ /* White text color for better readability */
+      animation: fadeInUp 1s ease;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      animation: fadeInUp 1s ease;
+    }
+
+    .card {
+      background-color: #8D6A51; /* Light Coffee color */
+      border-radius: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 17px;
+      aspect-ratio: 16 / 9; /* Set aspect ratio to 16:9 (adjust as needed) */
+      animation: fadeInUp 1s ease;
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      animation: fadeInUp 1s ease; 
+    }
+
+    .card h1 {
+      text-align: center;
+      margin-bottom: 12px;
+      animation: fadeInUp 1s ease;
+    }
+
+    .card p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+      animation: fadeInUp 1s ease;
+    }
+
+    .iframe-wrapper {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      animation: fadeInUp 1s ease;
+    }
+
+    .iframe {
+      width: 100%;
+      height: 100%;
+      border: navajowhite;
+      border-radius: 20px;
+      opacity: 1.5;
+      transform: scale(1.5);
+      transition: opacity 0.5s, transform 0.5s;
+      border-radius: 20px;
+      animation: fadeInUp 1s ease;
+    }
+
+    .iframe:hover {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* Mobile-friendly styles */
+    @media screen and (max-width: 967px) {
+      .container {
+        padding: 9px;
+      }
+    }
+    
+    button {
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  animation: fadeInUp 1s ease;
+}
+    
+    .hidden-image {
+      display: none;
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      animation: fadeInUp 1s ease;
+    }
+    .form {
+  display: grid;
+  grid-gap: 2em;
+  gap: 2em;
+  animation: fadeInUp 1s ease;
+}
+
+.form__radios {
+  display: grid;
+  grid-gap: 1em;
+  gap: 1em;
+  animation: fadeInUp 1s ease;
+}
+
+.form__radio {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fefdfe;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+          box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  animation: fadeInUp 1s ease;
+}
+
+.form__radio label {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  grid-gap: 1em;
+  gap: 1em;
+  animation: fadeInUp 1s ease;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  animation: fadeInUp 1s ease;
+}
+
+.icon {
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  width: 1em;
+  vertical-align: middle;
+  animation: fadeInUp 1s ease;
+}
+
+button {
+            width: 100px;
+            height: 40px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeInUp 1s ease;
+        }
+
+        button img {
+            max-width: 100%;
+            max-height: 100%;
+            animation: fadeInUp 1s ease;
+        }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>11thclass</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/classes.css">
+  </style>
+</head>
+<body>
+  <header>
+    <h1>+1 Vocational Students</h1>
+    <div class="search-container">
+      <input type="text" id="searchBar" placeholder="Search subjects...">
+      <button class="search-button">
+  <i class="fas fa-magnifying-glass"></i>
+</button>
+
+    </div>
+  </header>
+  <div class="subject-list">
+    <a href="https://drive.google.com/drive/folders/180j94rZ66ua62AeeYSlT3tCxjE23pqWL" class="subject" onclick="showSubjectDetails('Office Management-II')">Office Management-I</a>
+    <a href="https://drive.google.com/drive/folders/187OWrx5GnGSRZDnBLX1qc5RXzt2S9oPN" class="subject" onclick="showSubjectDetails('Typography-II')">Typography-I</a>
+    <a href="https://drive.google.com/drive/folders/18CawsUChQV5Uc_t1uCq_JU2LU7wTUt7H" class="subject" onclick="showSubjectDetails('General Foundation Course')">General Foundation Course</a>
+    <a href="https://drive.google.com/drive/folders/18EK2Xic7_rZ-psEirgF0vBAAPZhlYF40" class="subject" onclick="showSubjectDetails('On the Job Training')">On the Job Training</a>
+    <a href="https://drive.google.com/drive/folders/18FlLewVRN80OKsC_zN7vZNo7Re_chkxt" class="subject" onclick="showSubjectDetails('General English')">General English</a>
+    <a href="https://drive.google.com/drive/folders/18JKfaTWNHx1uAtAPI5QATqVV3WrmeB7k" class="subject" onclick="showSubjectDetails('General Punjabi')">General Punjabi</a>
+    <a href="https://drive.google.com/drive/folders/18LMhhHQeq8vq-obWiBfjiecDxwBM1po9" class="subject" onclick="showSubjectDetails('EVS')">EVS</a>
+    <a href="https://drive.google.com/drive/folders/195MbXhUj9FQU2_qmt_xujxy371RyXFJP" class="subject" onclick="showSubjectDetails('Computer Science')">Computer Science</a>
+    <a href="https://drive.google.com/drive/folders/10J39uUvzZn4htDnyZ8AblhWOSgMpKlkH" class="subject" onclick="showSubjectDetails('Welcome Life')">Welcome Life</a>
+  </div>
+  <div class="subject-details-container">
+    <h2 id="subjectHeading"></h2>
+    <p id="subjectDescription"></p>
+  </div>
+  <div class="subject-about-container">
+    <h2>About the Subjects</h2>
+    <ul>
+      <li><span class="main-subject" onclick="showSubjectDetails('+1 Accounting & E-commerce')">+1 Accounting & E-commerce:</span> Explore the principles of accounting and delve into the world of e-commerce.</li>
+      <li><span class="main-subject"  onclick="showSubjectDetails('Office Management-I') ">Office Management-I:</span> Build on the skills required for effective office management.</li>
+      <li><span class="main-subject" onclick="showSubjectDetails('Typography-I')">Typography-I:</span> Further your knowledge of fonts and typesetting in graphic design.</li>
+      <li><span class="main-subject"    onclick="showSubjectDetails('General Foundation Course:')">General Foundation Course:</span> A comprehensive course covering multiple subjects to build a strong foundation.</li>
+      <li><span class="main-subject" onclick="showSubjectDetails('On the Job Training:')">On the Job Training:</span> Gain practical experience through real-world job training.</li>
+      <li><a href="Kiddle.html" class="main-subject">English (General):</a> Improve your language skills and communication abilities in English.</li>
+      <li><span class="main-subject" onclick="showSubjectDetails('General Punjabi:')">General Punjabi:</span> Learn the Punjabi language and its cultural significance.</li>
+      <li><span class="main-subject" onclick="showSubjectDetails('EVS:')">EVS:</span> Environmental Studies - Understand the importance of environmental conservation and sustainability.</li>
+      <li><a href="Few.html" class="main-subject">Computer Science:</a> Get introduced to computer science concepts and programming languages.</li>
+      <li><span class="main-subject" onclick="showSubjectDetails('Welcome Life:')">Welcome Life:</span> An orientation course to prepare you for the next phase of life.</li>
+    </ul>
+  </div>
+    <div style="position: fixed; bottom: 10px; right: 10px;">
+    <a href="ByMeACoffee.html">
+      <img src="https://svgsilh.com/svg/654328.svg" alt="Coffee Cup Icon" width="40" height="40">
+    </a> 
+  </div>
+      <script src="styles/script/scripts.js">
+      </script>
+</body>
+</html>
